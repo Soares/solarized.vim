@@ -704,10 +704,10 @@ exe "hi! vimGroup"          .s:fmt_undb    .s:fg_blue   .s:bg_none
 "}}}
 " status bar highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! sbError"           .s:fmt_bold    .s:fg_base1  .s:bg_red
-exe "hi! sbWarning"         .s:fmt_bold    .s:fg_base1  .s:bg_yellow
+exe "hi! sbError"           .s:fmt_bold    .s:fg_base02 .s:bg_red
+exe "hi! sbWarning"         .s:fmt_bold    .s:fg_base02 .s:bg_orange
 exe "hi! sbNotify"          .s:fmt_none    .s:fg_base02 .s:bg_yellow
-exe "hi! sbOk"              .s:fmt_none    .s:fg_base1  .s:bg_green
+exe "hi! sbOk"              .s:fmt_none    .s:fg_base02 .s:bg_green
 "}}}
 " diff highlighting "{{{
 " ---------------------------------------------------------------------
