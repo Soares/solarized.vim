@@ -134,9 +134,10 @@
 " Allow or disallow certain features based on current terminal emulator or
 " environment.
 
-" Terminals that support italics
+" Terminals that support italics (TODO - handle tmux/screen better)
 let s:terms_italic=[
             \"rxvt",
+            \"tmux",
             \"gnome-terminal"
             \]
 " For reference only, terminals are known to be incomptible.
@@ -150,7 +151,7 @@ if has("gui_running")
 else
     let s:terminal_italic=0 " terminals will be guilty until proven compatible
     for term in s:terms_italic
-        if $TERM_PROGRAM =~ term
+        if $TERM_PROGRAM =~ term || $TERM =~ term
             let s:terminal_italic=1
         endif
     endfor
