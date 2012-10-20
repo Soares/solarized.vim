@@ -134,7 +134,7 @@
 " Allow or disallow certain features based on current terminal emulator or
 " environment.
 
-" Terminals that support italics
+" Terminals that support italics (TODO - handle tmux/screen better)
 let s:terms_italic=[
             \"rxvt",
             \"gnome-terminal",
