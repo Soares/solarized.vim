@@ -713,6 +713,13 @@ exe "hi! sbWarning"         .s:fmt_none    .s:fg_base02 .s:bg_orange
 exe "hi! sbNotify"          .s:fmt_none    .s:fg_base02 .s:bg_yellow
 exe "hi! sbOk"              .s:fmt_none    .s:fg_base02 .s:bg_green
 "}}}
+" hidden character highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! invisibleError"    .s:fmt_none    .s:fg_base02 .s:bg_red
+exe "hi! invisibleWarning"  .s:fmt_none    .s:fg_base02 .s:bg_orange
+exe "hi! invisibleNotify"   .s:fmt_none    .s:fg_base02 .s:bg_yellow
+exe "hi! invisibleOk"       .s:fmt_none    .s:fg_base02 .s:bg_green
+"}}}
 " diff highlighting "{{{
 " ---------------------------------------------------------------------
 hi! link diffAdded Statement
