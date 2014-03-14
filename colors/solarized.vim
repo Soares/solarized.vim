@@ -137,11 +137,12 @@
 " Terminals that support italics (TODO - handle tmux/screen better)
 let s:terms_italic=[
             \"rxvt",
-            \"gnome-terminal",
-            \"rxvt-unicode",
             \"rxvt-256color",
+            \"rxvt-unicode",
             \"rxvt-unicode-256color",
-            \"tmux"
+            \"gnome-terminal",
+            \"urxvt",
+            \"urxvt-256color"
             \]
 " For reference only, terminals are known to be incomptible.
 " Terminals that are in neither list need to be tested.
@@ -712,13 +713,6 @@ exe "hi! sbError"           .s:fmt_bold    .s:fg_base02 .s:bg_red
 exe "hi! sbWarning"         .s:fmt_none    .s:fg_base02 .s:bg_orange
 exe "hi! sbNotify"          .s:fmt_none    .s:fg_base02 .s:bg_yellow
 exe "hi! sbOk"              .s:fmt_none    .s:fg_base02 .s:bg_green
-"}}}
-" hidden character highlighting "{{{
-" ---------------------------------------------------------------------
-exe "hi! invisibleError"    .s:fmt_none    .s:fg_base02 .s:bg_red
-exe "hi! invisibleWarning"  .s:fmt_none    .s:fg_base02 .s:bg_orange
-exe "hi! invisibleNotify"   .s:fmt_none    .s:fg_base02 .s:bg_yellow
-exe "hi! invisibleOk"       .s:fmt_none    .s:fg_base02 .s:bg_green
 "}}}
 " diff highlighting "{{{
 " ---------------------------------------------------------------------
